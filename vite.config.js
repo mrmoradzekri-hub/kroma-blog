@@ -15,6 +15,7 @@ export default defineConfig({
         gasless: resolve(__dirname, 'src/posts/gasless-invoicing.html'),
         guide: resolve(__dirname, 'src/posts/guide-ultime-facturation.html'),
         toolkit: resolve(__dirname, 'src/posts/web3-freelancer-toolkit.html'),
+        maroc: resolve(__dirname, 'src/posts/crypto-maroc-guide.html'),
       }
     }
   }
