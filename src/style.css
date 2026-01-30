@@ -1,0 +1,21 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --bg-gradient: radial-gradient(circle at top right, #1e1b4b, #0f172a);
+}
+
+body {
+  @apply bg-slate-950 text-slate-200 font-body;
+  background: var(--bg-gradient);
+  min-height: 100vh;
+}
+
+.glass {
+  @apply bg-white/5 backdrop-blur-lg border border-white/10;
+}
+
+.title-glow {
+  text-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
+}

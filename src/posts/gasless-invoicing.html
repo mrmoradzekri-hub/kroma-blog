@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Freelancer’s Guide to Gasless Global Invoicing | Kroma Blog</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'apple-bg': '#fbfbfd',
+              'apple-text': '#1d1d1f',
+              'apple-muted': '#86868b',
+              'kroma-blue': '#0071e3',
+            },
+            fontFamily: {
+              sans: ['Space Grotesk', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+
+    <style type="text/css">
+        body {
+            background-color: #ffffff;
+            color: #1d1d1f;
+            overflow-x: hidden;
+            letter-spacing: -0.01em;
+        }
+
+        .nav-blur {
+            backdrop-filter: saturate(180%) blur(20px);
+            background: rgba(255, 255, 255, 0.7);
+        }
+
+        .article-content h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .article-content p {
+            font-size: 1.25rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            color: #424245;
+        }
+
+        .article-content ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 2rem;
+        }
+
+        .article-content li {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .article-content li::before {
+            content: "•";
+            color: #0071e3;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(180deg, #f5f5f7 0%, #ffffff 100%);
+        }
+
+        .apple-btn {
+            background: #1d1d1f;
+            color: #ffffff;
+            transition: all 0.2s ease;
+        }
+
+        .logo-minimal {
+            width: 32px;
+            height: 32px;
+            background: #1d1d1f;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 nav-blur border-b border-black/5 px-10 py-4 flex justify-between items-center">
+        <a href="../../index.html" class="flex items-center gap-4 group cursor-pointer no-underline">
+            <div class="logo-minimal group-hover:bg-kroma-blue transition-colors duration-300">K</div>
+            <span class="text-lg font-bold tracking-tight text-apple-text uppercase">KROMA <span class="text-apple-muted font-medium">BLOG</span></span>
+        </a>
+        <div class="hidden md:flex gap-10 text-[13px] font-medium text-apple-muted">
+            <a href="../../index.html" class="hover:text-apple-text transition">Back to Home</a>
+            <a href="#" class="hover:text-apple-text transition">Product</a>
+            <a href="#" class="hover:text-apple-text transition">Docs</a>
+        </div>
+        <a href="https://invoice.getkroma.xyz" class="apple-btn px-5 py-2 rounded-full text-xs font-bold shadow-sm">Launch App</a>
+    </nav>
+
+    <main class="relative">
+        <!-- Hero Header -->
+        <section class="hero-gradient pt-48 pb-20 px-8">
+            <div class="max-w-4xl mx-auto text-center">
+                <span class="text-kroma-blue text-sm uppercase font-bold tracking-widest mb-6 block">Protocol Insights • Jan 30, 2026</span>
+                <h1 class="text-5xl md:text-7xl font-bold mb-8 tracking-tight leading-tight text-apple-text">
+                    The Freelancer’s Guide to Gasless Invoicing.
+                </h1>
+                <p class="text-apple-muted text-xl md:text-2xl max-w-2xl mx-auto font-medium leading-relaxed">
+                    Stop losing 3% to platform fees. Learn how to reclaim your hard-earned money using Kroma L2.
+                </p>
+            </div>
+        </section>
+
+        <!-- Featured Image -->
+        <div class="max-w-6xl mx-auto px-8 -mt-10">
+            <div class="rounded-[40px] overflow-hidden shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=2832&auto=format&fit=crop" alt="Global Tech" class="w-full h-[500px] object-cover">
+            </div>
+        </div>
+
+        <!-- Article Content -->
+        <article class="max-w-3xl mx-auto px-8 py-24 article-content">
+            <p class="font-bold text-2xl text-apple-text mb-12">
+                In the old world, getting paid meant waiting 3-5 days for a SWIFT transfer and losing up to 5% in bank fees and conversion spreads. In the Web3 world, it meant fighting with Ethereum gas fees. Today, that changes.
+            </p>
+
+            <p>
+                As a freelancer, your income is your lifeblood. Yet, traditional payment rails and early blockchain implementations have treated fees as an unavoidable tax on your talent. Whether it is Stripe's percentage cut or the unpredictable "gas spikes" on Ethereum Mainnet, the middleman always takes a bite.
+            </p>
+
+            <h2>1. The Problem with "Standard" Billing</h2>
+            <p>
+                Most freelancers today use one of two systems:
+            </p>
+            <ul>
+                <li><strong>Traditional Platforms:</strong> Upwork, Fiverr, or PayPal. They offer "security" but charge between 3% and 20% of your total contract value.</li>
+                <li><strong>On-Chain (L1):</strong> Direct wallet-to-wallet transfers. While fast, a $100 invoice can easily cost $25 in gas fees during high network activity.</li>
+            </ul>
+
+            <h2>2. Enter Kroma: The Layer 2 Revolution</h2>
+            <p>
+                Kroma is built on top of Ethereum to solve exactly this problem. By using rollup technology, Kroma bundles transactions together, allowing you to enjoy the security of the most robust smart contract network in the world while paying virtually zero fees.
+            </p>
+            <p>
+                A typical invoice settlement on Kroma costs **less than $0.01**. For a freelancer earning $5,000 a month, switching from traditional rails to Kroma can save over **$2,400 per year** in unnecessary fees.
+            </p>
+
+            <h2>3. How to Use Kroma Invoice</h2>
+            <p>
+                Our tool, <strong>Kroma Invoice</strong>, is designed to be the bridge between technical efficiency and professional accounting. You don't need to be a blockchain expert to use it:
+            </p>
+            <ul>
+                <li><strong>Connect:</strong> Connect your wallet (Metamask, Rabby, or Coinbase).</li>
+                <li><strong>Create:</strong> Use our Apple-inspired editor to fill in your service details.</li>
+                <li><strong>Export:</strong> Generate a professional PDF that your client can store for their records.</li>
+                <li><strong>Settle:</strong> Send the link to your client. They pay in one click, and you receive the full amount instantly.</li>
+            </ul>
+
+            <div class="my-16 p-10 bg-apple-bg rounded-3xl border border-black/5">
+                <h3 class="text-2xl font-bold mb-4">Pro Tip: Transparent Savings</h3>
+                <p class="text-lg text-apple-muted mb-0">
+                    When sending your first Kroma invoice, include a small note: "By settling this via Kroma L2, we are both avoiding ~$40 in bank/gas fees." It’s a great way to show your client that you are tech-forward and cost-conscious.
+                </p>
+            </div>
+
+            <h2>Conclusion</h2>
+            <p>
+                The future of work is decentralized, global, and gasless. Kroma Invoice isn't just a tool—it's your unfair advantage in a competitive market. Stop paying the "middleman tax" and start keeping 100% of what you earn.
+            </p>
+
+            <div class="mt-20 pt-12 border-t border-black/5 flex items-center justify-between">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-slate-200 rounded-full overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=1000&auto=format&fit=crop" alt="Author">
+                    </div>
+                    <div>
+                        <p class="text-sm font-bold mb-0">Written by Kroma Team</p>
+                        <p class="text-xs text-apple-muted">Protocol & Growth Division</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <button class="p-2 rounded-full border border-black/5 hover:bg-slate-50 transition"><i data-lucide="twitter" class="w-5 h-5 text-apple-muted"></i></button>
+                    <button class="p-2 rounded-full border border-black/5 hover:bg-slate-50 transition"><i data-lucide="share-2" class="w-5 h-5 text-apple-muted"></i></button>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-20 px-8 text-center text-apple-muted text-xs font-medium border-t border-black/5">
+        <p class="mb-8">Copyright © 2026 Kroma Insights. All rights reserved.</p>
+        <div class="flex justify-center gap-8">
+            <a href="../../index.html" class="hover:text-apple-text transition">Home</a>
+            <a href="#" class="hover:text-apple-text transition">Privacy Policy</a>
+            <a href="#" class="hover:text-apple-text transition">Contact</a>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

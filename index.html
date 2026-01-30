@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Kroma Insights | Apple White V5</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'apple-bg': '#fbfbfd',
+              'apple-text': '#1d1d1f',
+              'apple-muted': '#86868b',
+              'kroma-blue': '#0071e3',
+            },
+            fontFamily: {
+              sans: ['Space Grotesk', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+
+    <style type="text/css">
+        body {
+            background-color: #ffffff;
+            color: #1d1d1f;
+            overflow-x: hidden;
+            letter-spacing: -0.01em;
+        }
+
+        /* --- Apple-like Soft Aurora --- */
+        .aurora-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            filter: blur(80px);
+            opacity: 0.3;
+            pointer-events: none;
+        }
+
+        .blob {
+            position: absolute;
+            width: 800px;
+            height: 800px;
+            border-radius: 50%;
+            animation: move 30s infinite alternate;
+        }
+
+        .blob-1 { background: radial-gradient(circle, #e0e7ff, transparent 70%); top: -20%; left: -10%; }
+        .blob-2 { background: radial-gradient(circle, #fae8ff, transparent 70%); bottom: -20%; right: -10%; animation-delay: -5s; }
+
+        @keyframes move {
+            from { transform: translate(0, 0); }
+            to { transform: translate(100px, 100px); }
+        }
+
+        .nav-blur {
+            backdrop-filter: saturate(180%) blur(20px);
+            background: rgba(255, 255, 255, 0.7);
+        }
+
+        .card-apple {
+            background: #ffffff;
+            border: 1px solid rgba(0,0,0,0.05);
+            border-radius: 28px;
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.01), 0 2px 4px -1px rgba(0, 0, 0, 0.006);
+        }
+
+        .card-apple:hover {
+            transform: scale(1.02);
+            box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.08);
+            border-color: rgba(0,0,0,0.1);
+        }
+
+        .gradient-text {
+            background: linear-gradient(180deg, #1d1d1f 0%, #434344 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .apple-btn {
+            background: #1d1d1f;
+            color: #ffffff;
+            transition: all 0.2s ease;
+        }
+
+        .apple-btn:hover {
+            background: #434344;
+            transform: scale(1.05);
+        }
+
+        .logo-minimal {
+            width: 32px;
+            height: 32px;
+            background: #1d1d1f;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body class="bg-apple-bg">
+
+    <div class="aurora-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 nav-blur border-b border-black/5 px-10 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-4 group cursor-pointer">
+            <div class="logo-minimal group-hover:bg-kroma-blue transition-colors duration-300">K</div>
+            <span class="text-lg font-bold tracking-tight text-apple-text uppercase">KROMA <span class="text-apple-muted font-medium">BLOG</span></span>
+        </div>
+        <div class="hidden md:flex gap-10 text-[13px] font-medium text-apple-muted">
+            <a href="#" class="hover:text-apple-text transition">Articles</a>
+            <a href="#" class="hover:text-apple-text transition">Produits</a>
+            <a href="#" class="hover:text-apple-text transition">Docs</a>
+        </div>
+        <a href="https://invoice.getkroma.xyz" class="apple-btn px-5 py-2 rounded-full text-xs font-bold shadow-sm">Launch App</a>
+    </nav>
+
+    <main class="relative pt-48 pb-20 px-8 max-w-6xl mx-auto">
+        <!-- Hero Apple Style -->
+        <section class="text-center mb-32">
+            <h1 class="text-6xl md:text-8xl font-bold mb-8 tracking-tight leading-tight gradient-text">
+                On-Chain Payments.<br>Simplified.
+            </h1>
+            <p class="text-apple-muted text-xl md:text-2xl max-w-2xl mx-auto font-medium leading-relaxed">
+                Experience the next generation of Web3 invoicing on Kroma.
+            </p>
+        </section>
+
+        <!-- Featured Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- Article 1 -->
+            <article class="card-apple overflow-hidden flex flex-col h-full group">
+                <div class="h-64 overflow-hidden relative bg-slate-100">
+                    <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?q=80&w=2832&auto=format&fit=crop" alt="Web3 Tech" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000">
+                </div>
+                <div class="p-10 flex flex-col flex-grow">
+                    <span class="text-kroma-blue text-[11px] uppercase font-bold tracking-widest mb-4">Protocol Insights</span>
+                    <h2 class="text-3xl font-bold mb-4 leading-tight">The Freelancer’s Guide to Gasless Invoicing</h2>
+                    <p class="text-apple-muted leading-relaxed mb-8 flex-grow">How Kroma L2 is reclaiming 3% of every transaction for the global workforce.</p>
+                    <a href="./src/posts/gasless-invoicing.html" class="flex items-center gap-2 text-kroma-blue font-bold group-hover:gap-4 transition-all">Read more <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+                </div>
+            </article>
+
+            <!-- Article 2 -->
+            <article class="card-apple overflow-hidden flex flex-col h-full group">
+                <div class="h-64 overflow-hidden relative bg-slate-100">
+                    <img src="https://images.unsplash.com/photo-1639710339852-514d33dd0fbe?q=80&w=2800&auto=format&fit=crop" alt="Trading Bot" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000">
+                </div>
+                <div class="p-10 flex flex-col flex-grow">
+                    <span class="text-kroma-blue text-[11px] uppercase font-bold tracking-widest mb-4">Strategy</span>
+                    <h2 class="text-3xl font-bold mb-4 leading-tight">Le Guide Ultime de la Facturation Crypto</h2>
+                    <p class="text-apple-muted leading-relaxed mb-8 flex-grow">Le monde du travail change. Payez moins de 0.01$ par facture avec Kroma.</p>
+                    <a href="./src/posts/guide-ultime-facturation.html" class="flex items-center gap-2 text-kroma-blue font-bold group-hover:gap-4 transition-all">Lire la suite <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+                </div>
+            </article>
+
+            <!-- Article 3 -->
+            <article class="card-apple overflow-hidden flex flex-col h-full group">
+                <div class="h-64 overflow-hidden relative bg-slate-100">
+                    <img src="https://images.unsplash.com/photo-1642104704074-907c0698bcd9?q=80&w=2832&auto=format&fit=crop" alt="Community" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000">
+                </div>
+                <div class="p-10 flex flex-col flex-grow">
+                    <span class="text-kroma-blue text-[11px] uppercase font-bold tracking-widest mb-4">Resource</span>
+                    <h2 class="text-3xl font-bold mb-4 leading-tight">The Web3 Freelancer’s Toolkit: 10 Essential Tools</h2>
+                    <p class="text-apple-muted leading-relaxed mb-8 text-sm flex-grow">reclaiming your hard-earned money using Kroma L2 and the right stack.</p>
+                    <a href="./src/posts/web3-freelancer-toolkit.html" class="flex items-center gap-2 text-kroma-blue font-bold group-hover:gap-4 transition-all">Read more <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+                </div>
+            </article>
+        </div>
+
+        <!-- Section Newsletter Apple Style -->
+        <section class="mt-32 p-16 md:p-24 rounded-[48px] bg-[#f5f5f7] text-center">
+            <h3 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Stay updated.</h3>
+            <p class="text-apple-muted text-lg mb-10 max-w-lg mx-auto font-medium">Join 12,000+ builders and get the latest on L2 infrastructure directly in your inbox.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-3">
+                <input type="email" placeholder="Email address" class="px-6 py-3 rounded-xl border border-black/10 outline-none focus:border-kroma-blue transition-all w-full md:w-80">
+                <button class="apple-btn px-8 py-3 rounded-xl font-bold">Subscribe</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-20 px-8 text-center text-apple-muted text-xs font-medium border-t border-black/5">
+        <p class="mb-8">Copyright © 2026 Kroma Insights. All rights reserved.</p>
+        <div class="flex justify-center gap-8">
+            <a href="#" class="hover:text-apple-text transition">Twitter</a>
+            <a href="#" class="hover:text-apple-text transition">GitHub</a>
+            <a href="#" class="hover:text-apple-text transition">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
