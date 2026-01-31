@@ -18,6 +18,7 @@ export default defineConfig({
         maroc: resolve(__dirname, 'src/posts/crypto-maroc-guide.html'),
         clawdbot: resolve(__dirname, 'src/posts/clawdbot-gateway-guide.html'),
         aislop: resolve(__dirname, 'src/posts/the-death-of-ai-slop.html'),
+        agenticseo: resolve(__dirname, 'src/posts/agentic-seo-aeo-guide.html'),
       }
     }
   }
