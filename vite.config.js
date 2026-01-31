@@ -17,6 +17,7 @@ export default defineConfig({
         toolkit: resolve(__dirname, 'src/posts/web3-freelancer-toolkit.html'),
         maroc: resolve(__dirname, 'src/posts/crypto-maroc-guide.html'),
         clawdbot: resolve(__dirname, 'src/posts/clawdbot-gateway-guide.html'),
+        aislop: resolve(__dirname, 'src/posts/the-death-of-ai-slop.html'),
       }
     }
   }
