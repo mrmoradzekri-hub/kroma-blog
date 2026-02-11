@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kroma Insights | The Future of On-Chain Payments & Invoicing</title>
+    <title>Kroma | Gasless Global Invoicing for Web3 Freelancers</title>
     <link rel="icon" type="image/svg+xml" href="./favicon.svg">
-    <meta name="description" content="Inside the euthanization of the web: Disney's Sora deal, the retreat of GPT-4o, and why agentic 'Turbo' modes are masking a deeper crisis of value.">
+    <meta name="description" content="Kroma Invoice: The professional, gasless billing solution for Web3 freelancers and agencies. Reclaim 100% of your earnings on Kroma L2.">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://blog.getkroma.xyz/">
-    <meta property="og:title" content="Kroma Insights | Future of On-Chain Payments">
+    <meta property="og:url" content="https://getkroma.xyz/">
+    <meta property="og:title" content="Kroma | Gasless Global Invoicing">
     <meta property="og:description" content="Reclaim 100% of your earnings with gasless invoicing on Kroma L2. Professional tools for Web3 freelancers.">
     <meta property="og:image" content="https://blog.getkroma.xyz/images/article1.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://blog.getkroma.xyz/">
-    <meta property="twitter:title" content="Kroma Insights | Future of On-Chain Payments">
-    <meta property="twitter:description" content="Inside the euthanization of the web: Disney's Sora deal, the retreat of GPT-4o, and why agentic 'Turbo' modes are masking a deeper crisis of value.">
-    <meta property="twitter:image" content="https://blog.getkroma.xyz/public/images/singularite-corporate-hero.png">
+    <meta property="twitter:url" content="https://getkroma.xyz/">
+    <meta property="twitter:title" content="Kroma | Gasless Global Invoicing">
+    <meta property="twitter:description" content="Professional gasless billing solution for Web3.">
+    <meta property="twitter:image" content="https://blog.getkroma.xyz/images/article1.png">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -87,20 +87,6 @@
             background: rgba(255, 255, 255, 0.7);
         }
 
-        .card-apple {
-            background: #ffffff;
-            border: 1px solid rgba(0,0,0,0.05);
-            border-radius: 28px;
-            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.01), 0 2px 4px -1px rgba(0, 0, 0, 0.006);
-        }
-
-        .card-apple:hover {
-            transform: scale(1.02);
-            box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.08);
-            border-color: rgba(0,0,0,0.1);
-        }
-
         .gradient-text {
             background: linear-gradient(180deg, #1d1d1f 0%, #434344 100%);
             -webkit-background-clip: text;
@@ -130,6 +116,15 @@
             font-weight: 700;
             font-size: 18px;
         }
+
+        .feature-card {
+            background: #ffffff;
+            border: 1px solid rgba(0,0,0,0.05);
+            border-radius: 28px;
+            padding: 2.5rem;
+            transition: all 0.4s ease;
+        }
+        .feature-card:hover { transform: translateY(-5px); border-color: rgba(0,0,0,0.1); }
     </style>
 </head>
 <body class="bg-apple-bg">
@@ -143,174 +138,71 @@
     <nav class="fixed w-full z-50 nav-blur border-b border-black/5 px-10 py-4 flex justify-between items-center">
         <div class="flex items-center gap-4 group cursor-pointer">
             <div class="logo-minimal group-hover:bg-kroma-blue transition-colors duration-300">K</div>
-            <span class="text-lg font-bold tracking-tight text-apple-text uppercase">KROMA <span class="text-kroma-blue font-bold">INSIGHTS</span></span>
+            <span class="text-lg font-bold tracking-tight text-apple-text uppercase">KROMA</span>
         </div>
         <div class="hidden md:flex gap-10 text-[13px] font-medium text-apple-muted">
-            <a href="./index.html" class="hover:text-apple-text transition">Articles</a>
-            <a href="./product.html" class="hover:text-apple-text transition">Produits</a>
+            <a href="./index.html" class="text-apple-text transition">Accueil</a>
+            <a href="./product.html" class="hover:text-apple-text transition">Produit</a>
+            <a href="./articles.html" class="hover:text-apple-text transition">Articles</a>
             <a href="./docs.html" class="hover:text-apple-text transition">Docs</a>
         </div>
         <a href="https://invoice.getkroma.xyz" class="apple-btn px-5 py-2 rounded-full text-xs font-bold shadow-sm">Launch App</a>
     </nav>
 
     <main class="relative pt-48 pb-20 px-8 max-w-6xl mx-auto">
-        <!-- Hero Apple Style -->
+        <!-- Hero -->
         <section class="text-center mb-32">
             <h1 class="text-6xl md:text-8xl font-bold mb-8 tracking-tight leading-tight gradient-text">
                 On-Chain Payments.<br>Simplified.
             </h1>
             <p class="text-apple-muted text-xl md:text-2xl max-w-2xl mx-auto font-medium leading-relaxed">
-                Experience the next generation of Web3 invoicing on Kroma.
+                The professional gasless billing solution for the global Web3 workforce.
             </p>
+            <div class="mt-12 flex justify-center gap-4">
+                <a href="https://invoice.getkroma.xyz" class="apple-btn px-8 py-4 rounded-full font-bold text-lg">Start Invoicing</a>
+                <a href="./product.html" class="bg-white border border-black/5 px-8 py-4 rounded-full font-bold text-lg hover:bg-slate-50 transition">Learn More</a>
+            </div>
         </section>
 
-        <!-- Featured Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
-            <!-- Latest: The Great Deleveraging -->
-            <article class="card-apple overflow-hidden flex flex-col h-full group">
-                <div class="h-64 overflow-hidden relative bg-slate-100">
-                    <img src="./public/images/the-great-deleveraging-hero.png" alt="Trump-UAE Crypto Scandal Analysis" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000">
+        <!-- Features Quick Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-32">
+            <div class="feature-card">
+                <div class="w-10 h-10 bg-blue-50 text-kroma-blue rounded-xl flex items-center justify-center mb-6">
+                    <i data-lucide="zap" class="w-5 h-5"></i>
                 </div>
-                <div class="p-10 flex flex-col flex-grow">
-                    <span class="text-red-600 text-[11px] uppercase font-bold tracking-widest mb-4">Market Crisis • Feb 1, 2026</span>
-                    <h2 class="text-3xl font-bold mb-4 leading-tight">The Great Deleveraging: Inside the Trump-UAE Crypto Scandal</h2>
-                    <p class="text-apple-muted leading-relaxed mb-8 flex-grow">19 Billions en fumée, un Cheikh espion chez World Liberty et le signal de fin de cycle pour les baleines.</p>
-                    <a href="./src/posts/the-great-deleveraging-2026.html" class="flex items-center gap-2 text-kroma-blue font-bold group-hover:gap-4 transition-all">Read Analysis <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+                <h3 class="text-xl font-bold mb-3">Gasless</h3>
+                <p class="text-apple-muted">No network fees for you or your clients. Built on Kroma L2.</p>
+            </div>
+            <div class="feature-card">
+                <div class="w-10 h-10 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center mb-6">
+                    <i data-lucide="file-text" class="w-5 h-5"></i>
                 </div>
-            </article>
-
-            <!-- Newest: The Agent Economy -->
-            <article class="card-apple overflow-hidden flex flex-col h-full group">
-                <div class="h-64 overflow-hidden relative bg-slate-100">
-                    <img src="./public/images/agent-economy.png" alt="Futuristic digital marketplace with holographic AI agents" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000">
+                <h3 class="text-xl font-bold mb-3">Professional</h3>
+                <p class="text-apple-muted">Beautiful PDF invoices compliant with global accounting standards.</p>
+            </div>
+            <div class="feature-card">
+                <div class="w-10 h-10 bg-green-50 text-green-600 rounded-xl flex items-center justify-center mb-6">
+                    <i data-lucide="shield-check" class="w-5 h-5"></i>
                 </div>
-                <div class="p-10 flex flex-col flex-grow">
-                    <span class="text-kroma-blue text-[11px] uppercase font-bold tracking-widest mb-4">New Era 2026</span>
-                    <h2 class="text-3xl font-bold mb-4 leading-tight">The Rise of the Agent Economy</h2>
-                    <p class="text-apple-muted leading-relaxed mb-8 flex-grow">How autonomous agents are evolving from chatbots into revenue-generating workers and recursive collaborators.</p>
-                    <a href="./src/posts/agent-economy-2026.html" class="flex items-center gap-2 text-kroma-blue font-bold group-hover:gap-4 transition-all">Read more <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
-                </div>
-            </article>
-
-            <!-- Article 0 (Newest - Agentic SEO) -->
-            <article class="card-apple overflow-hidden flex flex-col h-full group">
-                <div class="h-64 overflow-hidden relative bg-slate-100">
-                    <img src="./images/agentic-seo-hero.png" alt="Visualisation d'un réseau neuronal interconnecté avec des interfaces de navigateurs stealth" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000">
-                </div>
-                <div class="p-10 flex flex-col flex-grow">
-                    <span class="text-kroma-blue text-[11px] uppercase font-bold tracking-widest mb-4">Strategy 2026</span>
-                    <h2 class="text-3xl font-bold mb-4 leading-tight">The Agentic SEO Era: Mastering AEO</h2>
-                    <p class="text-apple-muted leading-relaxed mb-8 flex-grow">How to dominate AEO & GEO by combining stealth automation with Gemini 3 and Claude 4.5 intelligence.</p>
-                    <a href="./src/posts/agentic-seo-aeo-guide.html" class="flex items-center gap-2 text-kroma-blue font-bold group-hover:gap-4 transition-all">Read more <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
-                </div>
-            </article>
-
-            <!-- Article 1 (Death of AI Slop) -->
-
-            <!-- Article 0 (Clawdbot) -->
-            <article class="card-apple overflow-hidden flex flex-col h-full group">
-                <div class="h-64 overflow-hidden relative bg-slate-100">
-                    <img src="./images/clawdbot-hero.png" alt="A high-tech terminal showing a robotic lobster, representing the Clawdbot Gateway" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000">
-                </div>
-                <div class="p-10 flex flex-col flex-grow">
-                    <span class="text-blue-600 text-[11px] uppercase font-bold tracking-widest mb-4">Product Focus</span>
-                    <h2 class="text-3xl font-bold mb-4 leading-tight">Clawdbot: The Space Lobster's Gateway</h2>
-                    <p class="text-apple-muted leading-relaxed mb-8 flex-grow">Discover how to bridge AI agents to your favorite messaging apps like WhatsApp and Telegram.</p>
-                    <a href="./src/posts/clawdbot-gateway-guide.html" class="flex items-center gap-2 text-kroma-blue font-bold group-hover:gap-4 transition-all">Read more <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
-                </div>
-            </article>
-
-            <!-- Article 2026 (Corporate Singularity) -->
-            <article class="card-apple overflow-hidden flex flex-col h-full group border-2 border-kroma-blue/10">
-                <div class="h-64 overflow-hidden relative bg-slate-900">
-                    <img src="./public/images/singularite-corporate-hero.png" alt="Corporate Singularity Analysis" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000">
-                </div>
-                <div class="p-10 flex flex-col flex-grow bg-white">
-                    <div class="flex items-center gap-2 mb-4">
-                        <span class="bg-kroma-blue/10 text-kroma-blue text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Analysis</span>
-                        <span class="text-apple-muted text-xs font-medium">Feb 2, 2026</span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-apple-text mb-4 leading-tight">The Corporate Singularity</h3>
-                    <p class="text-apple-muted leading-relaxed mb-8 flex-grow">Why 2026's Agentic AI is an innovation mirage masking the gradual euthanization of the open web.</p>
-                    <a href="./src/posts/singularite-corporate.html" class="flex items-center gap-2 text-kroma-blue font-bold group-hover:gap-4 transition-all">Read report <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
-                </div>
-            </article>
-
-            <!-- Article 1 -->
-            <article class="card-apple overflow-hidden flex flex-col h-full group">
-                <div class="h-64 overflow-hidden relative bg-slate-100">
-                    <img src="./images/article1.png" alt="Freelancer laptop with holographic payment card representing gasless invoicing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000">
-                </div>
-                <div class="p-10 flex flex-col flex-grow">
-                    <span class="text-kroma-blue text-[11px] uppercase font-bold tracking-widest mb-4">Protocol Insights</span>
-                    <h2 class="text-3xl font-bold mb-4 leading-tight">The Freelancer’s Guide to Gasless Invoicing</h2>
-                    <p class="text-apple-muted leading-relaxed mb-8 flex-grow">How Kroma L2 is reclaiming 3% of every transaction for the global workforce.</p>
-                    <a href="./src/posts/gasless-invoicing.html" class="flex items-center gap-2 text-kroma-blue font-bold group-hover:gap-4 transition-all">Read more <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
-                </div>
-            </article>
-
-            <!-- Article 2 -->
-            <article class="card-apple overflow-hidden flex flex-col h-full group">
-                <div class="h-64 overflow-hidden relative bg-slate-100">
-                    <img src="./images/article2.png" alt="Crystalline 3D structure representing Kroma Layer 2 blockchain network" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000">
-                </div>
-                <div class="p-10 flex flex-col flex-grow">
-                    <span class="text-kroma-blue text-[11px] uppercase font-bold tracking-widest mb-4">Strategy</span>
-                    <h2 class="text-3xl font-bold mb-4 leading-tight">Le Guide Ultime de la Facturation Crypto</h2>
-                    <p class="text-apple-muted leading-relaxed mb-8 flex-grow">Le monde du travail change. Payez moins de 0.01$ par facture avec Kroma.</p>
-                    <a href="./src/posts/guide-ultime-facturation.html" class="flex items-center gap-2 text-kroma-blue font-bold group-hover:gap-4 transition-all">Lire la suite <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
-                </div>
-            </article>
-
-            <!-- Article 3 -->
-            <article class="card-apple overflow-hidden flex flex-col h-full group">
-                <div class="h-64 overflow-hidden relative bg-slate-100">
-                    <img src="./images/article3.png" alt="Curated toolkit for freelancers including Ledger wallet and high-end tech" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000">
-                </div>
-                <div class="p-10 flex flex-col flex-grow">
-                    <span class="text-kroma-blue text-[11px] uppercase font-bold tracking-widest mb-4">Resource</span>
-                    <h2 class="text-3xl font-bold mb-4 leading-tight">The Web3 Freelancer’s Toolkit: 10 Essential Tools</h2>
-                    <p class="text-apple-muted leading-relaxed mb-8 text-sm flex-grow">reclaiming your hard-earned money using Kroma L2 and the right stack.</p>
-                    <a href="./src/posts/web3-freelancer-toolkit.html" class="flex items-center gap-2 text-kroma-blue font-bold group-hover:gap-4 transition-all">Read more <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
-                </div>
-            </article>
-
-            <!-- Article 4 -->
-            <article class="card-apple overflow-hidden flex flex-col h-full group">
-                <div class="h-64 overflow-hidden relative bg-slate-100">
-                    <img src="./images/article4.png" alt="Modern Moroccan tech workspace with smartphone displaying digital invoice" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000">
-                </div>
-                <div class="p-10 flex flex-col flex-grow">
-                    <span class="text-green-600 text-[11px] uppercase font-bold tracking-widest mb-4">Guide Légal</span>
-                    <h2 class="text-3xl font-bold mb-4 leading-tight">Freelances au Maroc : Le Guide Crypto 2026</h2>
-                    <p class="text-apple-muted leading-relaxed mb-8 flex-grow">Est-il légal et rentable d’être payé en crypto au Maroc ? Le point sur la loi et la facturation.</p>
-                    <a href="./src/posts/crypto-maroc-guide.html" class="flex items-center gap-2 text-kroma-blue font-bold group-hover:gap-4 transition-all">Lire le guide <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
-                </div>
-            </article>
+                <h3 class="text-xl font-bold mb-3">Multi-Token</h3>
+                <p class="text-apple-muted">Get paid in ETH, KRO, or Stablecoins (USDT/USDC).</p>
+            </div>
         </div>
 
-        <!-- Section Newsletter Apple Style -->
-        <section class="mt-32 p-16 md:p-24 rounded-[48px] bg-[#f5f5f7] text-center">
-            <h3 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Stay updated.</h3>
-            <p class="text-apple-muted text-lg mb-10 max-w-lg mx-auto font-medium">Join 12,000+ builders and get the latest on L2 infrastructure directly in your inbox.</p>
-            <div class="flex flex-col md:flex-row justify-center gap-3">
-                <input type="email" placeholder="Email address" class="px-6 py-3 rounded-xl border border-black/10 outline-none focus:border-kroma-blue transition-all w-full md:w-80">
-                <button class="apple-btn px-8 py-3 rounded-xl font-bold">Subscribe</button>
+        <!-- Call to Action -->
+        <section class="p-16 md:p-24 rounded-[48px] bg-apple-text text-white text-center relative overflow-hidden">
+            <div class="relative z-10">
+                <h2 class="text-4xl md:text-6xl font-bold mb-8">Stop paying the "Gas Tax".</h2>
+                <p class="text-white/60 text-xl mb-12 max-w-xl mx-auto">Join thousands of freelancers reclaiming 100% of their earnings.</p>
+                <a href="https://invoice.getkroma.xyz" class="bg-white text-black px-10 py-4 rounded-full font-bold text-lg inline-block">Create your first invoice</a>
             </div>
         </section>
     </main>
 
-    <footer class="py-20 px-8 text-center text-apple-muted text-xs font-medium border-t border-black/5">
-        <p class="mb-8">Copyright © 2026 Kroma Insights. All rights reserved.</p>
-        <div class="flex justify-center gap-8">
-            <a href="#" class="hover:text-apple-text transition">Twitter</a>
-            <a href="#" class="hover:text-apple-text transition">GitHub</a>
-            <a href="#" class="hover:text-apple-text transition">Terms of Service</a>
-        </div>
+    <footer class="py-20 text-center text-apple-muted text-xs font-medium border-t border-black/5">
+        <p>© 2026 Kroma Insights. All rights reserved.</p>
     </footer>
 
-    <script>
-        lucide.createIcons();
-    </script>
+    <script>lucide.createIcons();</script>
 </body>
 </html>

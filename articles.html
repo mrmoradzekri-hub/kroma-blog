@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles & Insights | Kroma</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'apple-bg': '#fbfbfd',
+              'apple-text': '#1d1d1f',
+              'apple-muted': '#86868b',
+              'kroma-blue': '#0071e3',
+            },
+            fontFamily: {
+              sans: ['Space Grotesk', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+
+    <style type="text/css">
+        body { background-color: #ffffff; color: #1d1d1f; overflow-x: hidden; }
+        .nav-blur { backdrop-filter: saturate(180%) blur(20px); background: rgba(255, 255, 255, 0.7); }
+        .card-apple {
+            background: #ffffff;
+            border: 1px solid rgba(0,0,0,0.05);
+            border-radius: 28px;
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .card-apple:hover {
+            transform: scale(1.02);
+            box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.08);
+        }
+        .apple-btn { background: #1d1d1f; color: #ffffff; transition: all 0.2s ease; }
+        .logo-minimal { width: 32px; height: 32px; background: #1d1d1f; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 18px; }
+    </style>
+</head>
+<body class="bg-apple-bg">
+
+    <nav class="fixed w-full z-50 nav-blur border-b border-black/5 px-10 py-4 flex justify-between items-center">
+        <a href="./index.html" class="flex items-center gap-4 group cursor-pointer no-underline">
+            <div class="logo-minimal group-hover:bg-kroma-blue transition-colors duration-300">K</div>
+            <span class="text-lg font-bold tracking-tight text-apple-text uppercase">KROMA <span class="text-apple-muted font-medium">INSIGHTS</span></span>
+        </a>
+        <div class="hidden md:flex gap-10 text-[13px] font-medium text-apple-muted">
+            <a href="./index.html" class="hover:text-apple-text transition">Accueil</a>
+            <a href="./product.html" class="hover:text-apple-text transition">Produit</a>
+            <a href="./articles.html" class="text-apple-text transition">Articles</a>
+            <a href="./docs.html" class="hover:text-apple-text transition">Docs</a>
+        </div>
+        <a href="https://invoice.getkroma.xyz" class="apple-btn px-5 py-2 rounded-full text-xs font-bold shadow-sm">Launch App</a>
+    </nav>
+
+    <main class="relative pt-48 pb-20 px-8 max-w-6xl mx-auto">
+        <header class="text-center mb-24">
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6">Bibliothèque de Savoir.</h1>
+            <p class="text-apple-muted text-xl max-w-2xl mx-auto">Analyses, guides et visions sur l'économie des agents et les paiements on-chain.</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <!-- Grid item template -->
+            <article class="card-apple overflow-hidden flex flex-col h-full group">
+                <div class="h-64 overflow-hidden relative bg-slate-100">
+                    <img src="./public/images/the-great-deleveraging-hero.png" alt="Analyse Crise Crypto" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000">
+                </div>
+                <div class="p-10 flex flex-col flex-grow">
+                    <span class="text-red-600 text-[11px] uppercase font-bold tracking-widest mb-4">Market Analysis</span>
+                    <h2 class="text-2xl font-bold mb-4 leading-tight">The Great Deleveraging</h2>
+                    <p class="text-apple-muted leading-relaxed mb-8 flex-grow">Analyse profonde du scandale Trump-UAE et du désendettement structurel d'Ethereum.</p>
+                    <a href="./src/posts/the-great-deleveraging-2026.html" class="flex items-center gap-2 text-kroma-blue font-bold group-hover:gap-4 transition-all">Lire l'article <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+                </div>
+            </article>
+
+            <article class="card-apple overflow-hidden flex flex-col h-full group">
+                <div class="h-64 overflow-hidden relative bg-slate-100">
+                    <img src="./public/images/agent-economy.png" alt="Agent Economy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000">
+                </div>
+                <div class="p-10 flex flex-col flex-grow">
+                    <span class="text-kroma-blue text-[11px] uppercase font-bold tracking-widest mb-4">New Era 2026</span>
+                    <h2 class="text-2xl font-bold mb-4 leading-tight">The Rise of the Agent Economy</h2>
+                    <p class="text-apple-muted leading-relaxed mb-8 flex-grow">Comment les agents autonomes deviennent les nouveaux acteurs économiques du Web3.</p>
+                    <a href="./src/posts/agent-economy-2026.html" class="flex items-center gap-2 text-kroma-blue font-bold group-hover:gap-4 transition-all">Lire l'article <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+                </div>
+            </article>
+
+            <article class="card-apple overflow-hidden flex flex-col h-full group">
+                <div class="h-64 overflow-hidden relative bg-slate-100">
+                    <img src="./images/agentic-seo-hero.png" alt="Agentic SEO" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000">
+                </div>
+                <div class="p-10 flex flex-col flex-grow">
+                    <span class="text-kroma-blue text-[11px] uppercase font-bold tracking-widest mb-4">SEO 2026</span>
+                    <h2 class="text-2xl font-bold mb-4 leading-tight">Mastering AEO & GEO</h2>
+                    <p class="text-apple-muted leading-relaxed mb-8 flex-grow">Le playbook complet pour dominer les moteurs de réponse agentiques.</p>
+                    <a href="./src/posts/agentic-seo-aeo-guide.html" class="flex items-center gap-2 text-kroma-blue font-bold group-hover:gap-4 transition-all">Lire l'article <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+                </div>
+            </article>
+
+            <article class="card-apple overflow-hidden flex flex-col h-full group">
+                <div class="h-64 overflow-hidden relative bg-slate-900">
+                    <img src="./public/images/singularite-corporate-hero.png" alt="Corporate Singularity" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000">
+                </div>
+                <div class="p-10 flex flex-col flex-grow">
+                    <span class="text-kroma-blue text-[11px] uppercase font-bold tracking-widest mb-4">Strategy</span>
+                    <h2 class="text-2xl font-bold mb-4 leading-tight">The Corporate Singularity</h2>
+                    <p class="text-apple-muted leading-relaxed mb-8 flex-grow">Pourquoi l'IA agentique actuelle n'est peut-être qu'un mirage d'innovation.</p>
+                    <a href="./src/posts/singularite-corporate.html" class="flex items-center gap-2 text-kroma-blue font-bold group-hover:gap-4 transition-all">Lire le rapport <i data-lucide="chevron-right" class="w-4 h-4"></i></a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="py-20 text-center text-apple-muted text-xs font-medium border-t border-black/5">
+        <p>© 2026 Kroma. All rights reserved.</p>
+    </footer>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>
