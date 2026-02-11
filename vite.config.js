@@ -32,6 +32,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         product: resolve(__dirname, 'product.html'),
+        articles: resolve(__dirname, 'articles.html'),
         docs: resolve(__dirname, 'docs.html'),
         ...postFiles
       }
